@@ -2,13 +2,11 @@
 name = "rust-os"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Gunnar Westerling <gunnarwesterling@gmail.com>"]
 
 [dependencies]
-
-[profile.dev]
-panic = "abort"
+bootloader = "0.9.23"
 
 [profile.release]
-panic = "abort"
+opt-level = 2
+lto = true
