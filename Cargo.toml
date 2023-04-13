@@ -8,5 +8,5 @@ authors = ["Gunnar Westerling <gunnarwesterling@gmail.com>"]
 bootloader = "0.9.23"
 
 [profile.release]
-opt-level = 2
 lto = true
+debug = true
